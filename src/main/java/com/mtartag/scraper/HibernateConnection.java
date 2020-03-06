@@ -9,7 +9,7 @@ public class HibernateConnection {
 
     static {
         try {
-            sessionFactory = new Configuration().configure().buildSessionFactory();
+            sessionFactory = new Configuration().configure().addAnnotatedClass(StockEntity.class).buildSessionFactory();
         } catch (Throwable ex) {
             System.err.println("Initial SessionFactory creation failed." + ex);
             throw new ExceptionInInitializerError(ex);
@@ -18,6 +18,10 @@ public class HibernateConnection {
 
     public static SessionFactory getSessionFactory() {
         return sessionFactory;
+    }
+
+    public static void shutdown() {
+        getSessionFactory().close();
     }
 
 }

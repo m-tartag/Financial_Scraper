@@ -136,31 +136,44 @@ public class Scraper {
 
     public void hibernateArchive(StockEntity stock) {
 
-        SessionFactory factory = new Configuration()
-                .configure()
-                .addAnnotatedClass(StockEntity.class)
-                .buildSessionFactory();
+        SessionFactory sessionFactory = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(StockEntity.class).buildSessionFactory();
 
-//        Session session = factory.getCurrentSession();
-        Session session = HibernateConnection.getSessionFactory().openSession();
-        session.beginTransaction();
+        Session session = sessionFactory.getCurrentSession();
 
         try {
-//            StockEntity saveStock = new StockEntity();
-//
-//            saveStock.setSymbol(stock.getSymbol());
-//            saveStock.setLastPrice(stock.getLastPrice());
-//            saveStock.setChangeDollars(stock.getChangeDollars());
-//            saveStock.setChangePercent(stock.getChangePercent());
-//            saveStock.setVolume(stock.getVolume());
-//            saveStock.setAverageVolume(stock.getAverageVolume());
-//            saveStock.setMarketCap(stock.getMarketCap());
-//            saveStock.setScrapeDate(stock.getScrapeDate());
 
+            // Create Object
+
+            System.out.println("Creating new object..");
+
+            StockEntity saveStock = new StockEntity();
+
+            saveStock.setSymbol(stock.getSymbol());
+            saveStock.setLastPrice(stock.getLastPrice());
+            saveStock.setChangeDollars(stock.getChangeDollars());
+            saveStock.setChangePercent(stock.getChangePercent());
+            saveStock.setVolume(stock.getVolume());
+            saveStock.setAverageVolume(stock.getAverageVolume());
+            saveStock.setMarketCap(stock.getMarketCap());
+            saveStock.setScrapeDate(stock.getScrapeDate());
+
+            // Start a Transaction
+
+            session.beginTransaction();
+
+            // Save the Object
+
+            System.out.println("Saving the object..");
             session.save(stock);
+
+
+            // Commit Transaction
+
             session.getTransaction().commit();
+
         } finally {
-            factory.close();
+
+            sessionFactory.close();
         }
 
     }
@@ -172,4 +185,7 @@ public class Scraper {
     }
 
 }
+
+
+
 

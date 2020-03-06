@@ -37,8 +37,34 @@ public class StockEntity {
     @Column(name = "scrape_date")
     private String scrapeDate;
 
+    // Constructors
 
-    // Methods
+    public StockEntity() {
+
+    }
+
+    public StockEntity(int id, String symbol, String lastPrice, String changeDollars, String changePercent, String volume, String averageVolume, String marketCap, String scrapeDate) {
+        this.id = id;
+        this.symbol = symbol;
+        this.lastPrice = lastPrice;
+        this.changeDollars = changeDollars;
+        this.changePercent = changePercent;
+        this.volume = volume;
+        this.averageVolume = averageVolume;
+        this.marketCap = marketCap;
+        this.scrapeDate = scrapeDate;
+    }
+
+    // Getters + Setters
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 
     public String getSymbol() {
         return symbol;
@@ -101,6 +127,9 @@ public class StockEntity {
     public void setScrapeDate(String scrapeDate) {
         this.scrapeDate = scrapeDate;
     }
+
+    // Print Stock Method
+
     public void stockReport() {
         System.out.println("Symbol: " + this.symbol);
         System.out.println("Last Price: " + this.lastPrice);

@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c61ea85-cd26-4b7b-89d9-db481b3e783f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mtartag/scraper/HibernateConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mtartag/scraper/JDBCConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mtartag/scraper/Scraper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mtartag/scraper/StockEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Financial_Scraper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Financial_Scraper.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtartag/scraper/HibernateConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtartag/scraper/HibernateConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtartag/scraper/Scraper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtartag/scraper/Scraper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mtartag/scraper/StockEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtartag/scraper/StockEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +18,20 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,12 +61,118 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mtartag.scraper.App" />
+      <module name="Financial_Scraper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mtartag.scraper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.30" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.30" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Financial_Scraper" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54615" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Tomcat 9.0.30" />
+      <item itemvalue="Application.App" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -61,7 +184,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583517250426</updated>
-      <workItem from="1583517252091" duration="1557000" />
+      <workItem from="1583517252091" duration="6464000" />
     </task>
     <servers />
   </component>
@@ -69,25 +192,37 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="115" key="#Project_Structure" timestamp="1583518200484">
+    <state x="320" y="115" key="#Project_Structure" timestamp="1583519376818">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="115" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1583518200484" />
-    <state width="1398" height="212" key="GridCell.Tab.0.bottom" timestamp="1583517297872">
+    <state x="320" y="115" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1583519376818" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583521187735">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="212" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583517297872" />
-    <state width="1398" height="212" key="GridCell.Tab.0.center" timestamp="1583517297869">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1583521187735" />
+    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1583522960421">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="212" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583517297869" />
-    <state width="1398" height="212" key="GridCell.Tab.0.left" timestamp="1583517297868">
+    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1583522960421" />
+    <state width="1398" height="287" key="GridCell.Tab.0.bottom" timestamp="1583525747760">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="212" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583517297868" />
-    <state width="1398" height="212" key="GridCell.Tab.0.right" timestamp="1583517297871">
+    <state width="1398" height="287" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583525747760" />
+    <state width="1398" height="287" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1583523025418" />
+    <state width="1398" height="287" key="GridCell.Tab.0.center" timestamp="1583525747758">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="212" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583517297871" />
+    <state width="1398" height="287" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583525747758" />
+    <state width="1398" height="287" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1583523025414" />
+    <state width="1398" height="287" key="GridCell.Tab.0.left" timestamp="1583525747755">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="287" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583525747755" />
+    <state width="1398" height="287" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1583523025413" />
+    <state width="1398" height="287" key="GridCell.Tab.0.right" timestamp="1583525747759">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="287" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583525747759" />
+    <state width="1398" height="287" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1583523025415" />
   </component>
 </project>
