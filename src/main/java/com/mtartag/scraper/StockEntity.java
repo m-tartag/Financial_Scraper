@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class StockEntity {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
 
@@ -41,17 +41,17 @@ public class StockEntity {
 
     }
 
-//    public StockEntity(int id, String symbol, String lastPrice, String changeDollars, String changePercent, String volume, String averageVolume, String marketCap, String scrapeDate) {
-//        this.id = id;
-//        this.symbol = symbol;
-//        this.lastPrice = lastPrice;
-//        this.changeDollars = changeDollars;
-//        this.changePercent = changePercent;
-//        this.volume = volume;
-//        this.averageVolume = averageVolume;
-//        this.marketCap = marketCap;
-//        this.scrapeDate = scrapeDate;
-//    }
+    public StockEntity(int id, String symbol, String lastPrice, String changeDollars, String changePercent, String volume, String averageVolume, String marketCap, String scrapeDate) {
+        this.id = id;
+        this.symbol = symbol;
+        this.lastPrice = lastPrice;
+        this.changeDollars = changeDollars;
+        this.changePercent = changePercent;
+        this.volume = volume;
+        this.averageVolume = averageVolume;
+        this.marketCap = marketCap;
+        this.scrapeDate = scrapeDate;
+    }
 
     // Getters + Setters
 

@@ -99,6 +99,8 @@ public class Scraper {
             hibernateArchive(stock);
 
         }
+        // Must shutdown EntityFactory after loop
+        HibernateConnection.shutdown();
 
     }
 
@@ -137,31 +139,18 @@ public class Scraper {
 
         try {
 
-            SessionFactory sessionFactory = TestDB.getSessionFactory();
-
+            SessionFactory sessionFactory = HibernateConnection.getSessionFactory();
             Session session = sessionFactory.openSession();
-
-//            StockEntity saveStock = new StockEntity();
-//
-//            saveStock.setSymbol(stock.getSymbol());
-//            saveStock.setLastPrice(stock.getLastPrice());
-//            saveStock.setChangeDollars(stock.getChangeDollars());
-//            saveStock.setChangePercent(stock.getChangePercent());
-//            saveStock.setVolume(stock.getVolume());
-//            saveStock.setAverageVolume(stock.getAverageVolume());
-//            saveStock.setMarketCap(stock.getMarketCap());
-//            saveStock.setScrapeDate(stock.getScrapeDate());
-
             session.beginTransaction();
+
             System.out.println("Saving...");
-//            session.save(saveStock);
+
             session.save(stock);
+
             System.out.println("Saved Successfully");
 
             session.getTransaction().commit();
-
             session.close();
-            sessionFactory.close();
 
         } catch (Exception e) {
 
