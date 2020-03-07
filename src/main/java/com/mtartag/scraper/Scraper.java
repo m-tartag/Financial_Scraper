@@ -2,7 +2,6 @@ package com.mtartag.scraper;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -96,8 +95,8 @@ public class Scraper {
 
             // Save to database
 
-            archiveScrape(stock);
-//            hibernateArchive(stock);
+//            archiveScrape(stock);
+            hibernateArchive(stock);
 
         }
 
@@ -136,44 +135,38 @@ public class Scraper {
 
     public void hibernateArchive(StockEntity stock) {
 
-        SessionFactory sessionFactory = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(StockEntity.class).buildSessionFactory();
-
-        Session session = sessionFactory.getCurrentSession();
-
         try {
 
-            // Create Object
+            SessionFactory sessionFactory = TestDB.getSessionFactory();
 
-            System.out.println("Creating new object..");
+            Session session = sessionFactory.openSession();
 
-            StockEntity saveStock = new StockEntity();
-
-            saveStock.setSymbol(stock.getSymbol());
-            saveStock.setLastPrice(stock.getLastPrice());
-            saveStock.setChangeDollars(stock.getChangeDollars());
-            saveStock.setChangePercent(stock.getChangePercent());
-            saveStock.setVolume(stock.getVolume());
-            saveStock.setAverageVolume(stock.getAverageVolume());
-            saveStock.setMarketCap(stock.getMarketCap());
-            saveStock.setScrapeDate(stock.getScrapeDate());
-
-            // Start a Transaction
+//            StockEntity saveStock = new StockEntity();
+//
+//            saveStock.setSymbol(stock.getSymbol());
+//            saveStock.setLastPrice(stock.getLastPrice());
+//            saveStock.setChangeDollars(stock.getChangeDollars());
+//            saveStock.setChangePercent(stock.getChangePercent());
+//            saveStock.setVolume(stock.getVolume());
+//            saveStock.setAverageVolume(stock.getAverageVolume());
+//            saveStock.setMarketCap(stock.getMarketCap());
+//            saveStock.setScrapeDate(stock.getScrapeDate());
 
             session.beginTransaction();
-
-            // Save the Object
-
-            System.out.println("Saving the object..");
+            System.out.println("Saving...");
+//            session.save(saveStock);
             session.save(stock);
-
-
-            // Commit Transaction
+            System.out.println("Saved Successfully");
 
             session.getTransaction().commit();
 
-        } finally {
-
+            session.close();
             sessionFactory.close();
+
+        } catch (Exception e) {
+
+            System.out.println(e.toString());
+            e.getStackTrace();
         }
 
     }

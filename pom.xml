@@ -53,6 +53,11 @@
       <version>5.4.11.Final</version>
     </dependency>
     <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-entitymanager</artifactId>
+      <version>5.4.11.Final</version>
+    </dependency>
+    <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-api</artifactId>
       <version>3.11.0</version>
@@ -75,6 +80,11 @@
       <artifactId>selenium-support</artifactId>
       <version>3.11.0</version>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>javassist</groupId>
+      <artifactId>javassist</artifactId>
+      <version>3.12.1.GA</version>
     </dependency>
   </dependencies>
 

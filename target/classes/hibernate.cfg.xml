@@ -23,7 +23,9 @@
 
 		<!-- Set the current session context -->
 		<property name="current_session_context_class">thread</property>
- 
+        <mapping class="com.mtartag.scraper.StockEntity"/>
+
+
     </session-factory>
 
 </hibernate-configuration>
