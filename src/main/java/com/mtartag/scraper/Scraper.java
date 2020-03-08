@@ -104,7 +104,7 @@ public class Scraper {
 
     }
 
-    // Method to Send Stock Info to MySQL DB
+    // Method to Send Stock Info to MySQL DB - Antiquated
 
     public void archiveScrape(StockEntity stock)  {
 
@@ -134,6 +134,8 @@ public class Scraper {
         }
 
     }
+
+    //  Method to Connect and send scrape to DB via Hibernate
 
     public void hibernateArchive(StockEntity stock) {
 
