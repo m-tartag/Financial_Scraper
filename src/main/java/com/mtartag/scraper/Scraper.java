@@ -10,9 +10,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.util.List;
 
 public class Scraper {
@@ -22,6 +19,7 @@ public class Scraper {
     String webDriver;
     String webDriverPath;
     WebDriver driver;
+//    final StockEntity dummyData = new StockEntity(4, "XXX", "0", "0", "0", "0", "0", "0", "8888")
 
     // Constructor
 
@@ -40,16 +38,15 @@ public class Scraper {
         WebElement userEntry;
         WebElement passEntry;
 
-
         driver.get(URL);
         driver.manage().window().maximize();
 
         userEntry = driver.findElement(By.id("login-username"));
         userEntry.sendKeys(EMAIL + Keys.RETURN);
-
         passEntry = new WebDriverWait(driver, 10)
                 .until(ExpectedConditions.elementToBeClickable(By.id("login-passwd")));
-        passEntry.sendKeys(PASSWORD + Keys.RETURN);
+        passEntry.sendKeys(PASSWORD);
+        passEntry.sendKeys(Keys.RETURN);
     }
 
     // Scrape Method - Yahoo Finance Portfolio
@@ -104,38 +101,6 @@ public class Scraper {
 
     }
 
-    // Method to Send Stock Info to MySQL DB - Antiquated
-
-    public void archiveScrape(StockEntity stock)  {
-
-        try {
-            Connection conn = JDBCConnection.getConnection();
-            String query = "insert into stocks (symbol, last_price, change_dollars, change_percent, volume, average_volume, market_cap, scrape_date)"
-                    + "values (?, ?, ?, ?, ?, ?, ?, ?)";
-
-            PreparedStatement preparedStmt = conn.prepareStatement(query);
-
-            preparedStmt.setString(1, stock.getSymbol());
-            preparedStmt.setString(2, stock.getLastPrice());
-            preparedStmt.setString(3, stock.getChangeDollars());
-            preparedStmt.setString(4, stock.getChangePercent());
-            preparedStmt.setString(5, stock.getVolume());
-            preparedStmt.setString(6, stock.getAverageVolume());
-            preparedStmt.setString(7, stock.getMarketCap());
-            preparedStmt.setString(8, stock.getScrapeDate());
-
-            System.out.println("Saved to Database Successfully!");
-
-            preparedStmt.execute();
-            conn.close();
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-    }
-
-    //  Method to Connect and send scrape to DB via Hibernate
 
     public void hibernateArchive(StockEntity stock) {
 
@@ -169,6 +134,38 @@ public class Scraper {
     }
 
 }
+
+
+// Method to Send Stock Info to MySQL DB - Antiquated
+//
+//    public void archiveScrape(StockEntity stock)  {
+//
+//        try {
+//            Connection conn = JDBCConnection.getConnection();
+//            String query = "insert into stocks (symbol, last_price, change_dollars, change_percent, volume, average_volume, market_cap, scrape_date)"
+//                    + "values (?, ?, ?, ?, ?, ?, ?, ?)";
+//
+//            PreparedStatement preparedStmt = conn.prepareStatement(query);
+//
+//            preparedStmt.setString(1, stock.getSymbol());
+//            preparedStmt.setString(2, stock.getLastPrice());
+//            preparedStmt.setString(3, stock.getChangeDollars());
+//            preparedStmt.setString(4, stock.getChangePercent());
+//            preparedStmt.setString(5, stock.getVolume());
+//            preparedStmt.setString(6, stock.getAverageVolume());
+//            preparedStmt.setString(7, stock.getMarketCap());
+//            preparedStmt.setString(8, stock.getScrapeDate());
+//
+//            System.out.println("Saved to Database Successfully!");
+//
+//            preparedStmt.execute();
+//            conn.close();
+//
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//
+//    }
 
 
 

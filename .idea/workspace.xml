@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c61ea85-cd26-4b7b-89d9-db481b3e783f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/programs/Stringz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mtartag/scraper/Scraper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtartag/scraper/Scraper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/programs/Stringz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programs/Stringz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mtartag/scraper/Scraper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mtartag/scraper/Scraper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/programs/Stringz.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +91,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Stringz">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mtartag.scraper.App" />
       <module name="Financial_Scraper" />
@@ -180,14 +182,14 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Tomcat Server.Tomcat 9.0.30" />
       <item itemvalue="Application.App" />
       <item itemvalue="Application.Stringz" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.30" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Stringz" />
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.Stringz" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +215,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583517250426</updated>
-      <workItem from="1583517252091" duration="25651000" />
+      <workItem from="1583517252091" duration="28870000" />
+      <workItem from="1583690943692" duration="2851000" />
+      <workItem from="1583772691648" duration="271000" />
+      <workItem from="1583850191254" duration="2073000" />
     </task>
     <servers />
   </component>
@@ -229,38 +234,46 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1583519376818" />
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583568362193">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583690955208">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1583568362193" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1583690955208" />
     <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1583648329006">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1583648329006" />
+    <state x="349" y="146" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1583850392323">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="349" y="146" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1440.900@0.0.1440.900" timestamp="1583850392323" />
     <state x="472" y="313" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1583567072634">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="472" y="313" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1583567072634" />
-    <state width="1398" height="287" key="GridCell.Tab.0.bottom" timestamp="1583650330796">
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1583654394757">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="287" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583650330796" />
-    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1583594879849" />
-    <state width="1398" height="287" key="GridCell.Tab.0.center" timestamp="1583650330794">
+    <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1440.900@0.0.1440.900" timestamp="1583654394757" />
+    <state width="1398" height="212" key="GridCell.Tab.0.bottom" timestamp="1583768908496">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="287" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583650330794" />
-    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1583594879846" />
-    <state width="1398" height="287" key="GridCell.Tab.0.left" timestamp="1583650330789">
+    <state width="1398" height="212" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583768908496" />
+    <state width="1398" height="287" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1583655094680" />
+    <state width="1398" height="212" key="GridCell.Tab.0.center" timestamp="1583768908493">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="287" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583650330789" />
-    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1583594879835" />
-    <state width="1398" height="287" key="GridCell.Tab.0.right" timestamp="1583650330795">
+    <state width="1398" height="212" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583768908493" />
+    <state width="1398" height="287" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1583655094678" />
+    <state width="1398" height="212" key="GridCell.Tab.0.left" timestamp="1583768908492">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="287" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583650330795" />
-    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1583594879848" />
+    <state width="1398" height="212" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583768908492" />
+    <state width="1398" height="287" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1583655094677" />
+    <state width="1398" height="212" key="GridCell.Tab.0.right" timestamp="1583768908495">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="212" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583768908495" />
+    <state width="1398" height="287" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1583655094679" />
     <state x="258" y="112" key="Maven.ArtifactSearchDialog" timestamp="1583563987519">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
