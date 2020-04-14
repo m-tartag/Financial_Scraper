@@ -19,7 +19,6 @@ public class Scraper {
     String webDriver;
     String webDriverPath;
     WebDriver driver;
-//    final StockEntity dummyData = new StockEntity(4, "XXX", "0", "0", "0", "0", "0", "0", "8888")
 
     // Constructor
 

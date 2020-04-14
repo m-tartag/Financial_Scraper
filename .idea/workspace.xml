@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1c61ea85-cd26-4b7b-89d9-db481b3e783f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mtartag/scraper/Scraper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mtartag/scraper/Scraper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programs/Stringz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programs/Stringz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mtartag/scraper/Scraper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mtartag/scraper/Scraper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/programs/Stringz.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +40,13 @@
         <item name="crypto@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="crypto: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="crypto@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="crypto: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="stocks: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -218,7 +222,10 @@
       <workItem from="1583517252091" duration="28870000" />
       <workItem from="1583690943692" duration="2851000" />
       <workItem from="1583772691648" duration="271000" />
-      <workItem from="1583850191254" duration="2073000" />
+      <workItem from="1583850191254" duration="2082000" />
+      <workItem from="1584630877904" duration="12000" />
+      <workItem from="1584976503296" duration="1614000" />
+      <workItem from="1585843003779" duration="12000" />
     </task>
     <servers />
   </component>
@@ -254,25 +261,25 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1440.900@0.0.1440.900" timestamp="1583654394757" />
-    <state width="1398" height="212" key="GridCell.Tab.0.bottom" timestamp="1583768908496">
+    <state width="1398" height="203" key="GridCell.Tab.0.bottom" timestamp="1584985725918">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="212" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583768908496" />
+    <state width="1398" height="203" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584985725918" />
     <state width="1398" height="287" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1583655094680" />
-    <state width="1398" height="212" key="GridCell.Tab.0.center" timestamp="1583768908493">
+    <state width="1398" height="203" key="GridCell.Tab.0.center" timestamp="1584985725913">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="212" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583768908493" />
+    <state width="1398" height="203" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584985725913" />
     <state width="1398" height="287" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1583655094678" />
-    <state width="1398" height="212" key="GridCell.Tab.0.left" timestamp="1583768908492">
+    <state width="1398" height="203" key="GridCell.Tab.0.left" timestamp="1584985725912">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="212" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583768908492" />
+    <state width="1398" height="203" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584985725912" />
     <state width="1398" height="287" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1583655094677" />
-    <state width="1398" height="212" key="GridCell.Tab.0.right" timestamp="1583768908495">
+    <state width="1398" height="203" key="GridCell.Tab.0.right" timestamp="1584985725917">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="212" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583768908495" />
+    <state width="1398" height="203" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584985725917" />
     <state width="1398" height="287" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1583655094679" />
     <state x="258" y="112" key="Maven.ArtifactSearchDialog" timestamp="1583563987519">
       <screen x="0" y="0" width="1440" height="900" />
@@ -282,6 +289,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1583567329624" />
+    <state x="413" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1585843004311">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="413" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1585843004311" />
     <state x="525" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583563846133">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
